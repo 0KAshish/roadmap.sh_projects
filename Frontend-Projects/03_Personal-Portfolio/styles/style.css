@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 50%;
+  border: 2px solid black;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+
+.navbar,
+.logo,
+.navbar__ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+.navbar {
+  padding: 10px;
+  box-shadow: 0 0 5px grey ;
+}
+.navbar img {
+  width: 40px;
+  height: auto;
+  border: 2px solid green;
+  border-radius: 50%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  padding-block: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.social-link {
+  padding-block: 10px;
+}
+
+.hero {
+  padding: 50px;
+  display: grid;
+  place-content: center;
+  margin-bottom: 15px;
+  text-align: center;
+}
+h1 {
+  font-size: calc(1.5rem + 2.1vw);
+  padding-bottom: 10px;
+}
+
+h1,
+h2,
+h4,
+footer {
+  font-family: "Caveat", cursive;
+}
+h4 {
+  padding-block: 10px;
+}
+
+.qualification,
+.reviews {
+  display: flex;
+}
+
+.project,
+.work-experience,
+.education {
+  min-width: 33.3%;
+  border-block: 1px solid black;
+}
+
+.education_list-items {
+  list-style-type: disc;
+  padding-inline: 25px;
+}
+
+.project_list li {
+  border-bottom: 1px solid black;
+  padding: 10px;
+}
+
+.work-experience {
+  border: 1px solid black;
+}
+.work-experience_div {
+  border-block: 1px solid black;
+  padding: 10px;
+}
+
+.education {
+  padding-inline: 10px;
+}
+
+h2 {
+  padding: 10px;
+}
+
+.review-container {
+  padding: 20px;
+}
+
+.reviews {
+  gap: 20px;
+}
+
+.review {
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 8px;
+}
+
+.review p {
+  padding: 5px;
+}
+
+.grey-text {
+  color: grey;
+  font-size: 0.8rem;
+}
+
+.footer {
+  padding: 80px 20px 20px;
+  display: grid;
+  place-content: center;
+}
+
+@media (max-width: 600px) {
+  .navbar,
+  .logo {
+    flex-direction: column;
+  }
+  .hero {
+    padding: 10px;
+  }
+  .qualification,
+  .reviews {
+    display: flex;
+    flex-direction: column;
+  }
+  .work-experience {
+    border: 0;
+  }
+  .footer {
+    padding: 10px 20px;
+  }
+  .work-experience_div {
+    background-color: rgb(218, 218, 218);
+  }
+  .project_list li {
+    text-align: center;
+    background-color: rgb(218, 218, 218);
+  }
+  h2 {
+    text-align: center;
+  }
+}
