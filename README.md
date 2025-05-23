@@ -5,7 +5,8 @@ This repository contains front-end projects built following the [roadmap.sh](htt
 ## Projects List
 [Single-Page CV](https://roadmap.sh/projects/single-page-cv)\
 [Basic HTML Website](https://roadmap.sh/projects/basic-html-website)\
-[Personal Portfolio](https://roadmap.sh/projects/portfolio-website)
+[Personal Portfolio](https://roadmap.sh/projects/portfolio-website)\
+[Changelog Component](https://roadmap.sh/projects/changelog-component)
 
 ## Screenshot of Projects
 
@@ -21,5 +22,8 @@ This repository contains front-end projects built following the [roadmap.sh](htt
 <p align="left">
   <a href='/Frontend-Projects/03_Personal-Portfolio/'>
     <img width="48%" src="./Frontend-Projects/assets/personal-portfolio.png" alt="full responsive portfolio website" />
+  </a>
+  <a href='/Frontend-Projects/04_Changelog-Component/'>
+    <img width="48%" src="./Frontend-Projects/assets/changelog-component.png" alt="changelog component" />
   </a>
 </p>
