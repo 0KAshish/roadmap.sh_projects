@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  margin: 0 auto;
+  font-family: sans-serif;
+
+}
+.review-container{
+  width: 50%;
+  margin: 0 auto;
+}
+
+.first-two-review-container {
+  display: flex;
+}
+
+.card-one__reviewer,.card-two__reviewer {
+  display: flex;
+}
+.card-two {
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid grey;
+}
+
+.card-three{
+  display: flex;
+}
+
+.card-three img{
+ width: 100%;
+}
+
+
+.user-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
