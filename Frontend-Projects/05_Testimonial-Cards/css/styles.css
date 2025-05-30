@@ -4,41 +4,186 @@
   box-sizing: border-box;
 }
 
-body {
-  width: 100vw;
-  margin: 0 auto;
-  font-family: sans-serif;
+:root {
+  --review-bg: black;
+  --review-text: white;
 
+  --user-name-font-size: 1.25rem;
+  --user-name-fot-weight: bold;
+
+  --occupation-color: grey;
+  --border-radius: 1rem;
 }
-.review-container{
+
+body {
+  margin: 0 auto;
+  font-family: "Franklin Gothic Medium", sans-serif;
+  line-height: 1.2;
+}
+
+p {
+  padding-block: 0.25rem;
+}
+
+.occupation {
+  color: var(--occupation-color);
+}
+
+.review-container {
   width: 50%;
   margin: 0 auto;
 }
 
 .first-two-review-container {
   display: flex;
+  gap: 1rem;
 }
 
-.card-one__reviewer,.card-two__reviewer {
+.card-one__reviewer,
+.card-two__reviewer {
   display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
-.card-two {
-  padding: 5px;
-  border-radius: 5px;
+
+span {
+  display: block;
+  padding-block-start: 1rem;
+}
+
+.card-two,
+.card-one {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-block: 1rem;
+  border-radius: var(--border-radius);
   border: 2px solid grey;
 }
 
-.card-three{
-  display: flex;
+.card-one {
+  border: none;
 }
 
-.card-three img{
- width: 100%;
+.card-two {
+  padding: 0.75rem;
 }
 
+.card-one__review {
+  margin-bottom: 1.25rem;
+  border-radius: var(--border-radius);
+  padding: 0.75rem;
+  position: relative;
+  color: var(--review-text);
+  background-color: var(--review-bg);
+}
+
+.triangle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid var(--review-bg);
+  left: 15px;
+  bottom: -12px;
+}
+
+.card-two__review {
+  margin-bottom: 0.75rem;
+  border-radius: var(--border-radius);
+}
+
+.card-three {
+  display: grid;
+  grid-template-columns: 2fr 6fr;
+  gap: 1rem;
+}
+
+.card-three img {
+  height: 100%;
+  width: 100%;
+  border-radius: var(--border-radius);
+}
 
 .user-image {
   width: 50px;
   height: 50px;
   border-radius: 50%;
+}
+
+.card-three__review-container {
+  color: var(--review-text);
+  background-color: var(--review-bg);
+  padding: var(--border-radius);
+  border-radius: var(--border-radius);
+}
+
+.card-three__review-container img {
+  width: 100px;
+  height: auto;
+}
+
+.carousel {
+  text-align: center;
+  min-height: 200px;
+  margin-block: 1rem;
+  padding: 1rem;
+  border: 2px solid gray;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  border-radius: var(--border-radius);
+}
+
+.carousel__review {
+  padding-inline: 3rem;
+  padding-block-end: 1rem;
+}
+
+.carousel__reviewer-image {
+  display: flex;
+  gap: 1rem;
+  padding-block-end: 0.5rem;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.arousel__reviewer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.side-image,
+.center-image {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.side-image {
+  opacity: 0.5;
+  width: 35px;
+  height: 35px;
+}
+
+@media (max-width: 750px) {
+  .review-container {
+    max-width: 90%;
+  }
+
+  .first-two-review-container,
+  .card-three {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .carousel__review {
+    padding-inline: 0.5rem;
+    padding-block-end: 1rem;
+  }
 }
