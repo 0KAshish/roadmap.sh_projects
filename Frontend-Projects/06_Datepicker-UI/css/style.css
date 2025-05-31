@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  font-family: var(--ff, sans-serif);
+  line-height: 1.2;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+label {
+  position: relative;
+}
+
+.input-date {
+  padding-block-end: 5px;
+}
+
+input {
+  font-family: inherit;
+  letter-spacing: 1.5px;
+  height: 2rem;
+  font-weight: bold;
+  padding-inline-start: 0.25rem;
+  padding-inline-end: 1.5rem;
+}
+
+.calendar-icon {
+  font-size: larger;
+  position: absolute;
+  top: 10%;
+  right: 3%;
+}
+
+.year {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid black;
+  border-bottom: none;
+  padding: 0.5rem 0.75rem;
+}
+
+.days,
+.dates {
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+.days {
+  border-top: none;
+  text-align: center;
+}
+.dates {
+  text-align: center;
+}
+.dates div {
+  padding: 0.25rem;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.dates div:hover {
+  background-color: grey;
+  color: white;
+  cursor: pointer;
+}
