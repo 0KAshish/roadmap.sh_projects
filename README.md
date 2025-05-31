@@ -8,6 +8,7 @@ This repository contains front-end projects built following the [roadmap.sh](htt
 [Project URL: Personal Portfolio](https://roadmap.sh/projects/portfolio-website) | [Project files URL](/Frontend-Projects/03_Personal-Portfolio/)  
 [Project URL: Changelog Component](https://roadmap.sh/projects/changelog-component) | [Project files URL](/Frontend-Projects/04_Changelog-Component/)  
 [Project URL: Testimonial Cards](https://roadmap.sh/projects/testimonial-cards) | [Project files URL](/Frontend-Projects/05_Testimonial-Cards/)  
+[Project URL: Datepicker UI](https://roadmap.sh/projects/datepicker-ui) | [Project files URL](/Frontend-Projects/06_Datepicker-UI/)
 
 ## Screenshot of Projects
 ### Click on any screenshot to go the project files
@@ -33,5 +34,8 @@ This repository contains front-end projects built following the [roadmap.sh](htt
 <p align="left">
   <a href='/Frontend-Projects/05_Testimonial-Cards/'>
     <img width="48%" src="./Frontend-Projects/assets/testimonial-cards.png" alt="full responsive testimonial-card component" />
+  </a>
+  <a href='/Frontend-Projects/06_Datepicker-UI/'>
+    <img width="48%" src="./Frontend-Projects/assets/datepicker-ui.png" alt="simple date picker ui using HTML and CSS" />
   </a>
 </p>
