@@ -41,6 +41,9 @@ input {
   top: 10%;
   right: 3%;
 }
+.calendar-icon:hover,.fa-caret-left,.fa-caret-right {
+  cursor: pointer;
+}
 
 .year {
   display: flex;
@@ -56,6 +59,11 @@ input {
   border: 1px solid black;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
+}
+.days div:hover{
+  background-color: green;
+  color: antiquewhite;
+  cursor: pointer;
 }
 .days {
   border-top: none;
